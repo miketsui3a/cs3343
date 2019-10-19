@@ -30,6 +30,23 @@ public class Deck {
 	}
 	
 	public void printCard() {
+		System.out.print("Your Deck: ");
+		for (int i = 0;i<this.getCards().size();i++) {
+			System.out.print(this.getCards().get(i)+' ');
+		}
+		System.out.println(' ');
+	}
+	
+	public void printCpuCard() {
+		System.out.print("Cpu's Deck: ? ");
+		for (int i = 1;i<this.getCards().size();i++) {
+			System.out.print(this.getCards().get(i)+' ');
+		}
+		System.out.println(' ');
+	}
+	
+	public void printAllCpuCard() {
+		System.out.print("CPU's Deck: ");
 		for (int i = 0;i<this.getCards().size();i++) {
 			System.out.print(this.getCards().get(i)+' ');
 		}

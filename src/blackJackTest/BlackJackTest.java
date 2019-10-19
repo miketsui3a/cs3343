@@ -12,7 +12,6 @@ public class BlackJackTest {
 	@Test
 	public void test() {
 		BlackJack bj = new BlackJack(new Player("M",10,0));
-		bj.gameStart();
-		
+		bj.gameInit();
 	}
 }
